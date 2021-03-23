@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>酷我锦商城</title>
+	<link rel="stylesheet" type="text/css" href="../css/imglist.css"/>	
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+ 	<!-- <script type="text/javascript" src="../js/my.js"></script> -->
+ 	<script type="text/javascript">
+ 		$(document).ready(function(){
+	      $(".tab_menu ul li").click(function(){
+	      $(this).addClass("on").siblings().removeClass("on"); //切换选中的按钮高亮状态
+	      var index=$(this).index(); //获取被按下按钮的索引值，需要注意index是从0开始的
+	      $(".tab_box > div").eq(index).show().siblings().hide(); //在按钮选中时在下面显示相应的内容，同时隐藏不需要的框架内容
+	      });
+	    });
+ 	</script>
+</head>
+<body>
+<!-- 容器  -->
+	<div id="content">
+<!--  顶部导航  -->
+		<div class="top_div">
+			<div id="top">
+				<ul>
+					<li><a href="../html/log.html" style="color:red">登录 	免费注册</a></li>
+					<li><a href="">购物车</a></li>
+					<li style="border:0;"><a href="">我的订单</a></li>
+					<div style="clear:both;"></div>
+				</ul>
+			</div>
+		</div>
+<!--  头部  -->
+		<header id="header">
+			<div id="area">
+				<div class="logo"><img src="../logo1.fw.png" width="234" height="60"></div>
+				<div class="search">
+					<div class="search_form">
+						<form action="search.php" method="post">
+							<input type="text" name="" class="search_input_text" placeholder="酷我锦商城">
+							<input type="submit" value="搜索" class="search_button" name="">	
+						</form>
+					</div>
+				</div>
+				<div class="links">
+					<a href=""><img src="../images/toolbar_kuan.jpg"></a>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</header>
+<!--  导航栏  -->
+		<div class="nav_div">
+			<nav id="nav">
+				<div id="nav_area">
+					<div class="nav1">
+						<ul>
+							<li><a href="../index.html">首页</a></li>
+							<li><a href="../html/brand.html">大品牌</a></li>
+							<li style="background:red;border-radius:5px 5px 0 0;"><a href="../html/imglist.html" style="color:#fff;">商品中心</a></li>
+							<li><a href="../html/shopcar.html">购物车</a></li	>
+							<div style="clear:both;"></div>
+						</ul>
+					</div>
+					<div style="clear:both;">
+					</div>
+				</div>
+			</nav>
+		</div>
+<!--  主体内容  -->
+		<main id="main">
+<!--  主体的头部  -->
+			<div class="imglist">
+				<!-- 选项卡 -->
+				<div class="tab">
+					<div class="tab_menu">
+						<ul>
+						<li class="on">全部</li>
+						<li>男装</li>
+						<li>女装</li>
+						<li>鞋帽</li>
+						</ul>
+					</div>
+					<div class="tab_box">
+						<div  class="container">
+							<ul class="gallery">
+								<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+									 <a style="background:url(../images/700x700.b1691d9d664afda2c20fdcd352ac441f.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/700x700.b1691d9d664afda2c20fdcd352ac441f.310x310.jpg"> 
+									<img alt="" style="display:block;" src="../images/700x700.b1691d9d664afda2c20fdcd352ac441f.310x310.jpg" class=""> 
+									<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+									<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+									<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+									<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+									</div>
+									<div class="jrgx_text">
+		                            <div class="jrgx_text_left">
+		                                <span><a href="">大黄蜂童鞋专场</a></span>
+		                                <p>满2件8折</p>
+		                            </div>
+		                            <div class="jrgx_text_right">
+		                                <span>剩余3天</span>
+		                                <p><a href="">★收藏品牌</a></p>
+		                            </div>
+		                            <div style="clear:both;"></div>
+		                        	</div>
+								</li>
+								<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/600x600.85fd4f20d0e72ce117854a87e58402bf.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/600x600.85fd4f20d0e72ce117854a87e58402bf.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/600x600.85fd4f20d0e72ce117854a87e58402bf.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="">361度运动专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余4天</span>
+								<p><a href="">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/600x600.6d7eb8777857ae97ff86baf8372ae8ed.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/600x600.6d7eb8777857ae97ff86baf8372ae8ed.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/600x600.6d7eb8777857ae97ff86baf8372ae8ed.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="">星夜熊男装专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余2天</span>
+								<p><a href="">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;margin-right: 0px;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/600x600.74efb29bc17db9800fee02eecb3e9dc9.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/600x600.74efb29bc17db9800fee02eecb3e9dc9.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/600x600.74efb29bc17db9800fee02eecb3e9dc9.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="">魅族手机专场</a></span>
+								<p>满199元减10元</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余3天</span>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						</li>
+						<div style="clear:both;"></div>
+					</ul>
+					<ul>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/700x700.2e44b00449308632ac953b46865f7ce5.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/700x700.2e44b00449308632ac953b46865f7ce5.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/700x700.2e44b00449308632ac953b46865f7ce5.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+                            <div class="jrgx_text_left">
+                                <span><a href="">大黄蜂童鞋专场</a></span>
+                                <p>满2件8折</p>
+                            </div>
+                            <div class="jrgx_text_right">
+                                <span>剩余3天</span>
+                                <p><a href="">★收藏品牌</a></p>
+                            </div>
+                            <div style="clear:both;"></div>
+                        	</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="">361度运动专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余4天</span>
+								<p><a href="">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/700x700.7820c2b251ce84b84195c65a8196a19d.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/700x700.7820c2b251ce84b84195c65a8196a19d.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/700x700.7820c2b251ce84b84195c65a8196a19d.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="">星夜熊男装专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余2天</span>
+								<p><a href="">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;margin-right: 0px;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/700x700.99caf328020b6cad351dba8b306efe16.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/700x700.99caf328020b6cad351dba8b306efe16.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/700x700.99caf328020b6cad351dba8b306efe16.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="">魅族手机专场</a></span>
+								<p>满199元减10元</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余3天</span>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						</li>
+						<div style="clear:both;"></div>
+					</ul>
+					<ul>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/600x600.dedd5bba74f2ee32efe25ac3e4bee8dd.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/600x600.dedd5bba74f2ee32efe25ac3e4bee8dd.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/600x600.dedd5bba74f2ee32efe25ac3e4bee8dd.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+                            <div class="jrgx_text_left">
+                                <span><a href="">大黄蜂童鞋专场</a></span>
+                                <p>满2件8折</p>
+                            </div>
+                            <div class="jrgx_text_right">
+                                <span>剩余3天</span>
+                                <p><a href="">★收藏品牌</a></p>
+                            </div>
+                            <div style="clear:both;"></div>
+                        	</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="">361度运动专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余4天</span>
+								<p><a href="">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/600x600.8928c8727df0b62e68384684d6284b98.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/600x600.8928c8727df0b62e68384684d6284b98.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/600x600.8928c8727df0b62e68384684d6284b98.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="">星夜熊男装专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余2天</span>
+								<p><a href="">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;margin-right: 0px;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/600x600.936a9d58d32b12f910ee7bd5f0e32715.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/600x600.936a9d58d32b12f910ee7bd5f0e32715.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/600x600.936a9d58d32b12f910ee7bd5f0e32715.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="">魅族手机专场</a></span>
+								<p>满199元减10元</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余3天</span>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						</li>
+								<div style="clear: both"></div>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+									 <a style="background:url(../images/700x700.b1691d9d664afda2c20fdcd352ac441f.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href=""> 
+									<img alt="" style="display:block;" src="../images/700x700.b1691d9d664afda2c20fdcd352ac441f.310x310.jpg" class="../images/700x700.b1691d9d664afda2c20fdcd352ac441f.310x310.jp"> 
+									<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+									<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+									<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+									<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+									</div>
+									<div class="jrgx_text">
+		                            <div class="jrgx_text_left">
+		                                <span><a href="">大黄蜂童鞋专场</a></span>
+		                                <p>满2件8折</p>
+		                            </div>
+		                            <div class="jrgx_text_right">
+		                                <span>剩余3天</span>
+		                                <p><a href="">★收藏品牌</a></p>
+		                            </div>
+		                            <div style="clear:both;"></div>
+		                        	</div>
+								</li>
+								<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+									<a style="background:url(../images/600x600.6d7eb8777857ae97ff86baf8372ae8ed.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/600x600.6d7eb8777857ae97ff86baf8372ae8ed.310x310.jpg"> 
+									<img alt="" style="display:block;" src="../images/600x600.6d7eb8777857ae97ff86baf8372ae8ed.310x310.jpg" class=""> 
+									<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+									<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+									<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+									<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+									</div>
+									<div class="jrgx_text">
+									<div class="jrgx_text_left">
+										<span><a href="">星夜熊男装专场</a></span>
+										<p>满2件8折</p>
+									</div>
+									<div class="jrgx_text_right">
+										<span>剩余2天</span>
+										<p><a href="">★收藏品牌</a></p>
+									</div>
+									<div style="clear:both;"></div>
+										</div>
+									</li>
+									<div style="clear:both"></div>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li class="user_jy47_tp024" style="overflow: hidden;margin-right: 0px;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+								 <a style="background:url(../images/700x700.99caf328020b6cad351dba8b306efe16.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/700x700.99caf328020b6cad351dba8b306efe16.310x310.jpg"> 
+								<img alt="" style="display:block;" src="../images/700x700.99caf328020b6cad351dba8b306efe16.310x310.jpg" class=""> 
+								<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+								<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+								<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+								<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+								</div>
+								<div class="jrgx_text">
+								<div class="jrgx_text_left">
+									<span><a href="">魅族手机专场</a></span>
+									<p>满199元减10元</p>
+								</div>
+								<div class="jrgx_text_right">
+									<span>剩余3天</span>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+							</li>
+							<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+								 <a style="background:url(../images/600x600.8928c8727df0b62e68384684d6284b98.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/600x600.8928c8727df0b62e68384684d6284b98.310x310.jpg)"> 
+								<img alt="" style="display:block;" src="../images/600x600.8928c8727df0b62e68384684d6284b98.310x310.jpg" class=""> 
+								<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+								<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+								<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+								<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+								</div>
+								<div class="jrgx_text">
+								<div class="jrgx_text_left">
+									<span><a href="">星夜熊男装专场</a></span>
+									<p>满2件8折</p>
+								</div>
+								<div class="jrgx_text_right">
+									<span>剩余2天</span>
+									<p><a href="">★收藏品牌</a></p>
+								</div>
+								<div style="clear:both;"></div>
+								</div>
+							</li>
+							<div style="clear:both"></div>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(../images/700x700.2e44b00449308632ac953b46865f7ce5.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="../images/700x700.2e44b00449308632ac953b46865f7ce5.310x310.jpg"> 
+							<img alt="" style="display:block;" src="../images/700x700.2e44b00449308632ac953b46865f7ce5.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+                            <div class="jrgx_text_left">
+                                <span><a href="">大黄蜂童鞋专场</a></span>
+                                <p>满2件8折</p>
+                            </div>
+                            <div class="jrgx_text_right">
+                                <span>剩余3天</span>
+                                <p><a href="">★收藏品牌</a></p>
+                            </div>
+                            <div style="clear:both;"></div>
+                        	</div>
+						</li>
+								<div style="clear:both"></div>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		
+	<div class="footer_2">
+				<ul class="footer_2_one">
+					<li><a href="../html/details.html">梧州苍梧169号</a></li>	  
+					<li>梧州苍梧169号</li>  
+					<li><a href="../html/details.html">桂公网安备13647742925	</a></li>  
+					<li>营业执照13647742925</li>  
+					<li>食品流通许可证13647742925</li> 
+					<div style="clear:both;"></div>
+				</ul>
+				<ul class="footer_2_two">
+					<li>出版物经营许可证 </li>
+					<li>新出发桂零字第朝169号</li>  
+					<li>784858070@qq.com 版权所有 </li>
+					<li>KUWOJIN</li>
+					<div style="clear:both;"></div>
+				</ul>
+				<ul class="footer_2_three"><a href="../html/details.html"><img src="../images/footer.png"></a></ul>
+		</div>
+	<div class="a">
+		<ul class="a_top">
+			<li style="height:120px;">
+			<a href="../html/shopcar.html"><img src="../images/a1.png"><p>购</p><p>物</p><p>车</p></a>
+			</li>
+			<li><a href=""><img src="../images/a2.png"  style="width:26px;">
+				<div class="hidden_a">我的订单</div>
+			</a></li>
+			<li><a href=""><img src="../images/a3.png" style="width:26px;">
+				<div class="hidden_a">我的优惠卷</div>
+			</a></li>
+			<li><a href=""><img src="../images/a4.png" style="width:26px;">
+				<div class="hidden_a">我的收藏</div>
+			</a></li>
+			<li><a href=""><img src="../images/a5.png" style="width:26px;">
+				<div class="hidden_a">我的消息</div>
+			</a></li>
+		</ul>
+		<ul class="a_bottom">
+			<li class="imgpo"><a href=""><img src="../images/a6.png">
+				<div class="hidden_a_img"><img src="../images/zhe800@.png">
+				扫一扫
+				</div>
+			</a></li>
+			<li><a href=""><img src="../images/a7.png">
+				<div class="hidden_a">常见问题</div>
+			</a></li>
+			<li><a href=""><img src="../images/a8.png">
+				<div class="hidden_a">意见反馈</div>
+			</a></li>
+			<div class="back_top" id="back_top"><a href="javascript:void(0)" onclick="back()">TOP
+				<div class="hidden_a">返回顶部</div>
+			</a></div>
+		</ul>
+	</div>
+	<!--隐藏的搜索框-->
+<div class="hidden_big_search" id="hidden_big_search">
+		<div class="hidden1">
+			<div class="hidden1_bor">
+				<div class="hidden1_left">
+					<ul>
+						<li><a href="" style="color:red;">首页</a></li>
+						<li><a href="">大品牌</a></li>
+						<li><a href="">我的订单</a></li>
+						<li><a href="">购物车</a></li>
+						<li><a href="">9块9包邮</a></li>
+						<li><a href="">20元封顶</a></li>
+						<li><a href="">精选预告</a></li>
+						<li><a href="">特卖商城</a></li>
+						<li><a href="">今日上新</a></li>
+						<li><a href="">即将下架</a></li>
+						<li><a href="">每日十件</a></li>
+						<li><a href="">排行榜</a></li>
+						<div style="clear:both;"></div>
+					</ul>
+				</div>
+				<div class="top_search_div">
+			 		<div class="search_content_div">
+			 			<div class="search_form">
+			 				<form action="search.php" method="post"> 
+			 					<input type="text" name="" class="hidden_search_input_text" placeholder="酷我锦商场">
+			 					<input type="submit" value="搜索" class="hidden_search_button" name="">
+			 				</form>
+			 			</div>
+			 		</div>
+		 		</div>
+		 		<div style="clear:both;"></div>
+		 	</div>
+	 	</div>
+	 	<div class="hidden2">
+	 		<ul>
+	 			<li style="color:red;"><a href="">全部</a></li>
+	 			<li><a href="">女装</a></li>
+	 			<li><a href="">男装</a></li>
+	 			<li><a href="">鞋品</a></li>
+	 			<li><a href="">居家</a></li>
+	 			<li><a href="">美妆</a></li>
+	 			<li><a href="">数码家电</a></li>
+	 			<li><a href="">儿童</a></li>
+	 			<li><a href="">母婴</a></li>
+	 			<li><a href="">箱包</a></li>
+	 			<li><a href="">美食</a></li>
+	 			<li><a href="">内衣</a></li>
+	 			<li><a href="">家纺</a></li>
+	 			<li><a href="">配饰</a></li>
+	 			<li><a href="">文体</a></li>
+	 			<li><a href="">中老年</a></li>
+	 			<div style="clear:both;"></div>
+	 		</ul>
+	 	</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>酷我锦商城</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/koala.min.1.5.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui-1.7.2.custom.css">
+	<script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="./js/my.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript">
+    	//获取动态滚动条位置
+		document.onscroll=function(){ 
+		var top = document.body.scrollTop||document.documentElement.scrollTop;
+		//document.title=top;
+		var backDiv = document.getElementById('back_top');
+		//console.log(backDiv);
+		var scrollSearch = document.getElementById('hidden_big_search');
+		//console.log(11);
+		if (top>=600) { 
+			backDiv.style.display='block';
+		}else{ 
+			backDiv.style.display='none';
+		}
+		if (top>=200) { 
+			scrollSearch.style.display='block';
+		}else{ 
+			scrollSearch.style.display='none';
+		}
+	}
+    </script>
+</head>
+<body>
+<!-- 容器  -->
+	<div id="content">
+<!--  顶部导航  -->
+		<div class="top_div">
+			<div id="top">
+				<ul>
+					<li><a href="./html/details.html">QQ登录</a></li>
+					<li><a href="./html/log.html" style="color:red">登录 	免费注册</a></li>
+					<li><a href="./html/details.html">我的订单</a></li>
+					<li><a href="./html/details.html">购物车</a></li>
+					<li><a href="./html/details.html">帮助中心</a></li>
+					<li style="border:0;"><a href="./html/details.html">	卖家中心</a></li>
+					<div style="clear:both;"></div>
+				</ul>
+			</div>
+		</div>
+<!--  头部  -->
+		<header id="header">
+			<div id="area">
+				<div class="logo"><img src="logo1.fw.png" width="234" height="60"></div>
+				<div class="search">
+					<div class="search_form">
+						<form action="search.php" method="post">
+							<input type="text" name="" class="search_input_text" placeholder="酷我锦商城">
+							<input type="submit" value="搜索" class="search_button" name="">	
+						</form>
+					</div>
+				</div>
+				<div class="links">
+					<a href="./html/details.html"><img src="./images/toolbar_kuan.jpg"></a>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</header>
+<!--  导航栏  -->
+		<div class="nav_div">
+			<nav id="nav">
+				<div id="nav_area">
+					<div class="nav1">
+						<ul>
+							<li style="background:red;border-radius:5px 5px 0 0;"><a href="index.html" style="color:#fff;">首页</a></li>
+							<li><a href="./html/brand.html">大品牌</a></li>
+							<li><a href="./html/imglist.html">商品中心</a></li>
+							<li><a href="./html/shopcar.html">购物车</a></li	>
+							<div style="clear:both;"></div>
+						</ul>
+					</div>
+					<div class="xiena">
+						<a href="./html/details.html"></a>
+					</div>
+					<div class="qiandao">
+						<a href="./html/details.html"><div class="qiandao_text">签到享好礼</div>
+							<img src="./images/500x360.02453a77a6924241b3302ad0156c5ef1.500x360.jpg" class="qiandao_img">
+						</a>
+					</div>
+					<div style="clear:both;">
+					</div>
+				</div>
+			</nav>
+		</div>
+<!--  主体内容  -->
+		<main id="main">
+<!--  主体的头部  -->
+			<div id="main_header">
+				<div id="main_section">
+					<ul>
+						<li><a href="./html/details.html">女装</a>、<a href="./html/details.html">内衣</a><p>></p>
+							<div class="hidden_main">
+								<div class="hidden_main_left">	
+									<ul>
+										<div class="span"><a href="./html/details.html">女装</a></div>
+										<li><a href="./html/details.html" style="color:red;">卫衣</a></li>
+										<li><a href="./html/details.html" style="color:red;">秋冬连衣裙</a></li>
+										<li><a href="./html/details.html">女装外套</a></li>
+										<li><a href="./html/details.html" style="color:red;">风衣</a></li>
+										<li><a href="./html/details.html">毛衣</a></li>
+										<li><a href="./html/details.html" style="color:red;">大码女装</a></li>
+										<li><a href="./html/details.html" style="color:red;">牛仔外套</a></li>
+										<li><a href="./html/details.html">上衣</a></li>
+										<li><a href="./html/details.html" style="color:red;">打底裤</a></li>
+										<li><a href="./html/details.html">牛仔裤</a></li>
+										<li><a href="./html/details.html" style="color:red;">中长款衬衫</a></li>
+										<li><a href="./html/details.html">半身裙</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+									<ul>
+										<div class="span"><a href="./html/details.html">内衣</a></div>
+										<li><a href="./html/details.html" style="color:red;">丝袜</a></li>
+										<li><a href="./html/details.html" style="color:red;">睡衣</a></li>
+										<li><a href="./html/details.html">家居服</a></li>
+										<li><a href="./html/details.html">文胸</a></li>
+										<li><a href="./html/details.html" style="color:red;">男士内裤</a></li>
+										<li><a href="./html/details.html">打底</a></li>
+										<li><a href="./html/details.html">女式内裤</a></li>
+										<li><a href="./html/details.html" style="color:red;">棉袜</a></li>
+										<li><a href="./html/details.html">船袜</a></li>
+										<li><a href="./html/details.html" style="color:red;">浴袍</a></li>
+										<li><a href="./html/details.html" style="color:red;">性感睡衣</a></li>
+										<li><a href="./html/details.html">媒体塑身衣</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+								</div>
+								<div class="hidden_main_right">
+									<a href="./html/details.html"><img src="./images/300x200.f4002c06647b7298a39d077801176b08.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/150x100.d8a0f29bcae4d07d44452c9d6baa7d3e.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.6881f6e1f350f622bd9b40842bc094b1.150x.png"></a>
+									<br/>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li><a href="./html/details.html">男装</a>、<a href="./html/details.html">鞋品</a><p>></p>
+							<div class="hidden_main">
+								<div class="hidden_main_left">	
+									<ul>
+										<div class="span"><a href="./html/details.html">男装</a></div>
+										<li><a href="./html/details.html" style="color:red;">男士衬衫</a></li>
+										<li><a href="./html/details.html" style="color:red;">短袖T恤</a></li>
+										<li><a href="./html/details.html">休闲夹克</a></li>
+										<li><a href="./html/details.html" style="color:red;">男士西装</a></li>
+										<li><a href="./html/details.html">长袖T恤</a></li>
+										<li><a href="./html/details.html" style="color:red;">男士外套</a></li>
+										<li><a href="./html/details.html" style="color:red;">男士针杉</a></li>
+										<li><a href="./html/details.html">运动套装</a></li>
+										<li><a href="./html/details.html" style="color:red;">休闲长裤</a></li>
+										<li><a href="./html/details.html">男士上装</a></li>
+										<li><a href="./html/details.html" style="color:red;">牛仔裤</a></li>
+										<li><a href="./html/details.html">时尚背心</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+									<ul>
+										<div class="span"><a href="./html/details.html">鞋品</a></div>
+										<li><a href="./html/details.html" style="color:red;">雪地靴</a></li>
+										<li><a href="./html/details.html" style="color:red;">拖鞋</a></li>
+										<li><a href="./html/details.html">短靴</a></li>
+										<li><a href="./html/details.html">女鞋</a></li>
+										<li><a href="./html/details.html" style="color:red;">帆布鞋</a></li>
+										<li><a href="./html/details.html">男鞋</a></li>
+										<li><a href="./html/details.html">休闲鞋</a></li>
+										<li><a href="./html/details.html" style="color:red;">女士单鞋</a></li>
+										<li><a href="./html/details.html">豆豆鞋</a></li>
+										<li><a href="./html/details.html" style="color:red;">高跟鞋</a></li>
+										<li><a href="./html/details.html" style="color:red;">厚底鞋</a></li>
+										<li><a href="./html/details.html">运动鞋</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+								</div>
+								<div class="hidden_main_right">
+									<a href="./html/details.html"><img src="./images/300x200.4f7693c415e7f56a25ab9e9c16bb62c5.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/150x100.2ce5015edeef00bd25f05ea7445d9ffb.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.3c3bfbe777d6f04ed2c7f439c06918c8.150x.jpg"></a>
+									<br/>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li><a href="./html/details.html">儿童</a>、<a href="./html/details.html">母婴</a><p>></p>
+							<div class="hidden_main">
+								<div class="hidden_main_left">	
+									<ul>
+										<div class="span"><a href="./html/details.html">儿童</a></div>
+										<li><a href="./html/details.html" style="color:red;">童装</a></li>
+										<li><a href="./html/details.html" style="color:red;">儿童连衣裙</a></li>
+										<li><a href="./html/details.html">童鞋</a></li>
+										<li><a href="./html/details.html" style="color:red;">儿童衬衫</a></li>
+										<li><a href="./html/details.html">益智玩具</a></li>
+										<li><a href="./html/details.html" style="color:red;">儿童运动鞋</a></li>
+										<li><a href="./html/details.html" style="color:red;">儿童内衣</a></li>
+										<li><a href="./html/details.html">儿童套装</a></li>
+										<li><a href="./html/details.html" style="color:red;">打底裤</a></li>
+										<li><a href="./html/details.html">儿童卫衣</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+									<ul>
+										<div class="span"><a href="./html/details.html">母婴</a></div>
+										<li><a href="./html/details.html" style="color:red;">婴幼用品</a></li>
+										<li><a href="./html/details.html" style="color:red;">孕妈必备</a></li>
+										<li><a href="./html/details.html">爬爬服</a></li>
+										<li><a href="./html/details.html">纸尿裤</a></li>
+										<li><a href="./html/details.html" style="color:red;">玩具早教</a></li>
+										<li><a href="./html/details.html">婴幼穿着</a></li>
+										<li><a href="./html/details.html">婴儿棉衣</a></li>
+										<li><a href="./html/details.html" style="color:red;">婴儿帽</a></li>
+										<li><a href="./html/details.html">孕妇装</a></li>
+										<li><a href="./html/details.html" style="color:red;">奶瓶</a></li>
+										<li><a href="./html/details.html" style="color:red;">毛绒玩具</a></li>
+										<li><a href="./html/details.html">积木</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+								</div>
+								<div class="hidden_main_right">
+									<a href="./html/details.html"><img src="./images/300x200.70bee27c46a4acdee35ab0fc599172e7.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.211e1729009a1109df888150363a2cc7.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.31c4c95dc22fbaa55b9d578af0e44e92.150x.jpg"></a>
+									<br/>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li><a href="./html/details.html">家纺</a>、<a href="./html/details.html">居家</a><p>></p>
+							<div class="hidden_main">
+								<div class="hidden_main_left">	
+									<ul>
+										<div class="span"><a href="./html/details.html">家纺</a></div>
+										<li><a href="./html/details.html" style="color:red;">布艺软式</a></li>
+										<li><a href="./html/details.html" style="color:red;">床上用品</a></li>
+										<li><a href="./html/details.html">蚊帐</a></li>
+										<li><a href="./html/details.html" style="color:red;">四件套</a></li>
+										<li><a href="./html/details.html">沙发垫</a></li>
+										<li><a href="./html/details.html" style="color:red;">床单</a></li>
+										<li><a href="./html/details.html" style="color:red;">毛巾</a></li>
+										<li><a href="./html/details.html">床垫</a></li>
+										<li><a href="./html/details.html" style="color:red;">窗帘</a></li>
+										<li><a href="./html/details.html">床笠</a></li>
+										<li><a href="./html/details.html" style="color:red;">枕头</a></li>
+										<li><a href="./html/details.html">毛绒玩具</a></li>
+										<li><a href="./html/details.html">坐垫</a></li>
+										<li><a href="./html/details.html">抱枕</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+									<ul>
+										<div class="span"><a href="./html/details.html">居家</a></div>
+										<li><a href="./html/details.html" style="color:red;">热水袋</a></li>
+										<li><a href="./html/details.html" style="color:red;">usb电风扇</a></li>
+										<li><a href="./html/details.html">保温杯</a></li>
+										<li><a href="./html/details.html">洗衣液</a></li>
+										<li><a href="./html/details.html" style="color:red;">百货日杂</a></li>
+										<li><a href="./html/details.html">十元店</a></li>
+										<li><a href="./html/details.html">收纳盒</a></li>
+										<li><a href="./html/details.html" style="color:red;">厨房做饭</a></li>
+										<li><a href="./html/details.html">个护洗护</a></li>
+										<li><a href="./html/details.html" style="color:red;">洗碗手套</a></li>
+										<li><a href="./html/details.html" style="color:red;">晾衣架</a></li>
+										<li><a href="./html/details.html">家具建材</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+								</div>
+								<div class="hidden_main_right">
+									<a href="./html/details.html"><img src="./images/300x200.37ccbfa2c9dc2417180c4757e2f20f98.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.735f010d561a267135138909c312daf6.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.7c1490b07d414a72860c592e843a33ce.150x.jpg"></a>
+									<br/>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li><a href="./html/details.html">美食</a>、<a href="./html/details.html">箱包</a><p>></p>
+							<div class="hidden_main">
+								<div class="hidden_main_left">	
+									<ul>
+										<div class="span"><a href="./html/details.html">美食</a></div>
+										<li><a href="./html/details.html" style="color:red;"></a></li>
+										<li><a href="./html/details.html" style="color:red;">肉松饼</a></li>
+										<li><a href="./html/details.html">营养生鲜</a></li>
+										<li><a href="./html/details.html" style="color:red;">茶叶</a></li>
+										<li><a href="./html/details.html">大红枣</a></li>
+										<li><a href="./html/details.html" style="color:red;">粮油干货</a></li>
+										<li><a href="./html/details.html" style="color:red;">饮料冲调</a></li>
+										<li><a href="./html/details.html">上衣</a></li>
+										<li><a href="./html/details.html" style="color:red;">休闲食品</a></li>
+										<li><a href="./html/details.html">蜂蜜</a></li>
+										<li><a href="./html/details.html" style="color:red;">饼干</a></li>
+										<li><a href="./html/details.html">核桃</a></li>
+										<li><a href="./html/details.html">糖果</a></li>
+										<li><a href="./html/details.html" style="color:red;">牛肉干</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+									<ul>
+										<div class="span"><a href="./html/details.html">箱包</a></div>
+										<li><a href="./html/details.html" style="color:red;">女包</a></li>
+										<li><a href="./html/details.html" style="color:red;">儿童背包</a></li>
+										<li><a href="./html/details.html">男包</a></li>
+										<li><a href="./html/details.html">链条包</a></li>
+										<li><a href="./html/details.html" style="color:red;">手拿包</a></li>
+										<li><a href="./html/details.html" style="color:red;">钱包</a></li>
+										<li><a href="./html/details.html">旅行包</a></li>
+										<li><a href="./html/details.html" style="color:red;">斜挎包</a></li>
+										<li><a href="./html/details.html">单肩包</a></li>
+										<li><a href="./html/details.html" style="color:red;">双肩包</a></li>
+										<li><a href="./html/details.html" style="color:red;">贝壳包</a></li>
+										<li><a href="./html/details.html">旅行箱</a></li>
+										<li><a href="./html/details.html" style="color:red;">潮流包包</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+								</div>
+								<div class="hidden_main_right">
+									<a href="./html/details.html"><img src="./images/300x200.d083714db51b2d10557a6ecccb600428.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.561949d54e86b046e81b380558cc10e2.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.2dbdf1e76280a6785cb9bf6b95c07205.150x.png"></a>
+									<br/>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li><a href="./html/details.html">数码家电</a><p>></p>
+							<div class="hidden_main">
+								<div class="hidden_main_left">	
+									<ul>
+										<div class="span"><a href="./html/details.html">数码家电</a></div>
+										<li><a href="./html/details.html" style="color:red;">手机</a></li>
+										<li><a href="./html/details.html" style="color:red;">U盘</a></li>
+										<li><a href="./html/details.html">迷你音箱</a></li>
+										<li><a href="./html/details.html" style="color:red;">内存卡</a></li>
+										<li><a href="./html/details.html">钢化膜</a></li>
+										<li><a href="./html/details.html" style="color:red;">数据线</a></li>
+										<li><a href="./html/details.html" style="color:red;">耳机</a></li>
+										<li><a href="./html/details.html">手机壳</a></li>
+										<li><a href="./html/details.html" style="color:red;">影音相机</a></li>
+										<li><a href="./html/details.html">数码配件</a></li>
+										<li><a href="./html/details.html" style="color:red;">鼠标</a></li>
+										<li><a href="./html/details.html">电脑配件</a></li>
+										<li><a href="./html/details.html" style="color:red;">数码配件</a></li>
+										<li><a href="./html/details.html" style="color:red;">路由器</a></li>
+										<li><a href="./html/details.html" style="color:red;">厨房电器</a></li>
+										<li><a href="./html/details.html" style="color:red;">生活家电</a></li>
+										<li><a href="./html/details.html" style="color:red;">电热水壶</a></li>
+										<li><a href="./html/details.html">榨汁机</a></li>
+										<li><a href="./html/details.html">净水器</a></li>
+										<li><a href="./html/details.html">电饭煲</a></li>
+										<li><a href="./html/details.html" style="color:red;">足浴盆</a></li>
+										<li><a href="./html/details.html" style="color:red;">加湿器</a></li>
+										<li><a href="./html/details.html" style="color:red;">电磁炉</a></li>
+										<li><a href="./html/details.html">吹风机</a></li>
+										<li><a href="./html/details.html">剃须刀</a></li>
+										<li><a href="./html/details.html">优品汇</a></li>
+										<li><a href="./html/details.html">酸奶机</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+								</div>
+								<div class="hidden_main_right">
+									<a href="./html/details.html"><img src="./images/300x200.a333b1cccf56c95618f063278c40ff17.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/150x100.2ec96e24251162b4bfbe4e17a9b79656.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.b4a177020e03aa8c32b3d2c1ee74c823.150x.jpg"></a>
+									<br/>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li><a href="./html/details.html">美妆</a>、<a href="./html/details.html">配饰</a><p>></p>
+							<div class="hidden_main">
+								<div class="hidden_main_left">	
+									<ul>
+										<div class="span"><a href="./html/details.html">美妆</a></div>
+										<li><a href="./html/details.html" style="color:red;">护肤套装</a></li>
+										<li><a href="./html/details.html" style="color:red;">护发精油</a></li>
+										<li><a href="./html/details.html">口红</a></li>
+										<li><a href="./html/details.html" style="color:red;">指甲油</a></li>
+										<li><a href="./html/details.html">眼线笔</a></li>
+										<li><a href="./html/details.html" style="color:red;">秋冬补水</a></li>
+										<li><a href="./html/details.html" style="color:red;">去角质</a></li>
+										<li><a href="./html/details.html">唇彩</a></li>
+										<li><a href="./html/details.html" style="color:red;">身体乳</a></li>
+										<li><a href="./html/details.html">香水</a></li>
+										<li><a href="./html/details.html" style="color:red;">面膜</a></li>
+										<li><a href="./html/details.html">精油皂</a></li>
+										<li><a href="./html/details.html">洁面乳</a></li>
+										<li><a href="./html/details.html">护发</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+									<ul>
+										<div class="span"><a href="./html/details.html">配饰</a></div>
+										<li><a href="./html/details.html" style="color:red;">丝巾</a></li>
+										<li><a href="./html/details.html" style="color:red;">帽子</a></li>
+										<li><a href="./html/details.html">品牌手表</a></li>
+										<li><a href="./html/details.html">遮阳帽</a></li>
+										<li><a href="./html/details.html" style="color:red;">发饰</a></li>
+										<li><a href="./html/details.html">手套</a></li>
+										<li><a href="./html/details.html">披肩</a></li>
+										<li><a href="./html/details.html" style="color:red;">发夹</a></li>
+										<li><a href="./html/details.html">项链</a></li>
+										<li><a href="./html/details.html" style="color:red;">手链</a></li>
+										<li><a href="./html/details.html" style="color:red;">眼镜</a></li>
+										<li><a href="./html/details.html">锁骨链</a></li>
+										<li><a href="./html/details.html"></a>品牌特惠</li>
+										<div style="clear:both;"></div>
+									</ul>
+								</div>
+								<div class="hidden_main_right">
+									<a href="./html/details.html"><img src="./images/300x200.a306acc415ef335173fde6fd9dbf3484.150x.png"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.fe04f92d5e92ca56b5c6e0bb0d2f4c76.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.f44aa78ef75e0f8affab6f879ffdc692.150x.jpg"></a>
+									<br/>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li><a href="./html/details.html">运动</a>、<a href="./html/details.html">中年人</a><p>></p>
+							<div class="hidden_main">
+								<div class="hidden_main_left">	
+									<ul>
+										<div class="span"><a href="./html/details.html">运动</a></div>
+										<li><a href="./html/details.html" style="color:red;">汽车用品</a></li>
+										<li><a href="./html/details.html" style="color:red;">书籍</a></li>
+										<li><a href="./html/details.html">行车记录仪</a></li>
+										<li><a href="./html/details.html" style="color:red;">办公用品</a></li>
+										<li><a href="./html/details.html">望远镜</a></li>
+										<li><a href="./html/details.html" style="color:red;">健身美体</a></li>
+										<li><a href="./html/details.html" style="color:red;">登山鞋</a></li>
+										<li><a href="./html/details.html">冲锋衣</a></li>
+										<li><a href="./html/details.html" style="color:red;">登山包</a></li>
+										<li><a href="./html/details.html">汽车用垫</a></li>
+										<li><a href="./html/details.html" style="color:red;">钢笔</a></li>
+										<li><a href="./html/details.html">篮球鞋</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+									<ul>
+										<div class="span"><a href="./html/details.html">中老年</a></div>
+										<li><a href="./html/details.html" style="color:red;">中老年男装</a></li>
+										<li><a href="./html/details.html" style="color:red;">中老年女装</a></li>
+										<li><a href="./html/details.html">妈妈服</a></li>
+										<li><a href="./html/details.html">中老年开衫</a></li>
+										<li><a href="./html/details.html" style="color:red;">大码女装</a></li>
+										<li><a href="./html/details.html">春装新品</a></li>
+										<li><a href="./html/details.html">按摩器</a></li>
+										<li><a href="./html/details.html" style="color:red;">妈妈鞋</a></li>
+										<li><a href="./html/details.html">老花镜</a></li>
+										<li><a href="./html/details.html" style="color:red;">足浴桶</a></li>
+										<li><a href="./html/details.html" style="color:red;">中老年棉服</a></li>
+										<div style="clear:both;"></div>
+									</ul>
+								</div>
+								<div class="hidden_main_right">
+									<a href="./html/details.html"><img src="./images/300x200.31e3bbfebe0cd65e3f154f83cef7b13d.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/150x100.015e84bff4083c8e513f539e54dfe79c.150x.jpg"></a>
+									<br/>
+									<a href="./html/details.html"><img src="./images/300x200.bbb4f6d86797543880030eafae7ebd54.150x.jpg"></a>
+									<br/>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</li>
+						<div class="section_1">
+						<li><a href="./html/details.html">今日上新</a></li><li class="bot"><a href="./html/details.html">最后抢</a></li><li class="bot"><a href="./html/details.html">排行榜</a></li><div style="clear:both;"></div>
+						</div>
+						<div class="section_1">
+						<li><a href="./html/details.html">每日十件</a></li><li class="bot"><a href="./html/details.html">值得买</a></li><li class="bot"><a href="./html/details.html">限量抢</a></li><div style="clear:both;"></div>
+						</div>
+					</ul>
+				</div>
+				<div id="main_aside">
+					<div class="banner_div">
+						<div id="igs">
+					      	<a class="ig" href="#"><img src="./images/1030x350.3b4243fbc70359e1097d4924bd04d4fd.1030x350+1-1.1030x350.jpg"/></a>
+					      	<a class="ig" href="#"><img src="./images/1030x350.72f98007f8a347771e97bb21d3ff27b4.1030x350+1-1.1030x350.jpg"/></a>
+					      	<a class="ig" href="#"><img src="./images/1030x350.97d1584204dd9bd58947b6d248a44c34.1030x350+1-1.1030x350.jpg"/></a>
+					      	<a class="ig" href="#"><img src="./images/1030x350.360e4d74e97aed77a047b2ec52513963.1030x350+1-1.1030x350.jpg"/></a>
+					      	<a class="ig" href="#"><img src="./images/1030x350.c0e455e5ff8aae2e068d2164729baa43.1030x350+1-1.1030x350.jpg"/></a>
+					       
+					      	<div class="btn btn1"><</div>
+					      	<div class="btn btn2">></div>
+					       
+					      	<ul id="tabs">
+					        	<li class="tab">1</li>
+					        	<li class="tab">2</li>
+					        	<li class="tab">3</li>
+					        	<li class="tab">4</li>
+					        	<li class="tab">5</li>
+					      	</ul>
+					    </div>
+						<!-- <div id="decoroll2" class="imgfocus">
+							<div id="decoimg_a2" class="imgbox">
+								<div class="decoimg_b2"><a href="http://sc.chinaz.com/"><img src="./images/1030x350.3b4243fbc70359e1097d4924bd04d4fd.1030x350+1-1.1030x350.jpg"></a></div>
+								<div class="decoimg_b2"><a href="http://sc.chinaz.com/"><img src="./images/1030x350.72f98007f8a347771e97bb21d3ff27b4.1030x350+1-1.1030x350.jpg"></a></div>
+								<div class="decoimg_b2"><a href="http://sc.chinaz.com/"><img src="./images/1030x350.97d1584204dd9bd58947b6d248a44c34.1030x350+1-1.1030x350.jpg"></a></div>
+								<div class="decoimg_b2"><a href="http://sc.chinaz.com/"><img src="./images/1030x350.360e4d74e97aed77a047b2ec52513963.1030x350+1-1.1030x350.jpg"></a></div>
+								<div class="decoimg_b2"><a href="http://sc.chinaz.com/"><img src="./images/1030x350.c0e455e5ff8aae2e068d2164729baa43.1030x350+1-1.1030x350.jpg"></a></div>
+							</div>
+		
+							<ul id="deconum2" class="num_a2">
+								<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+								<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+								<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+								<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+							</ul>
+		
+						</div> -->
+ 					</div>
+				</div>
+				<div style="clear:both;"></div>	
+		</div>
+<!--  品牌热卖  -->
+			<div class="pprm">
+				<div class="pprm_1">
+					<div class="pprm_1_left">
+							品牌热卖
+						<a href="" style="color:red;font-size:12px;">● 今日在线品牌 666 个</a>
+					</div>
+					<div class="pprm_1_right">
+						<li><a style="color:red;" href="">女装</a></li>
+						<li><a style="color:red;" href="">家纺</a></li>
+						<li><a href="./html/details.html">儿童</a></li>
+						<li><a href="./html/details.html">美妆</a></li>
+						<li><a href="./html/details.html">母婴</a></li>
+						<li><a style="color:red;" href="">男装</a></li>
+						<li><a href="./html/details.html">箱包</a></li>
+						<li><a style="color:red;" href="">内衣</a></li>
+						<li><a href="./html/details.html">运动</a></li>
+						<li><a href="./html/details.html">鞋品</a></li>
+						<li><a style="color:red;" href="">美食</a></li>
+						<li><a href="./html/details.html">居家</a></li>
+						<li><a style="color:red;" href="">中老年</a></li>
+						<li><a href="./html/details.html">配饰</a></li>
+						<li><a href="./html/details.html">数码家电</a></li>
+						<li style="background:rgba(255,0,0,0.7);color:#fff;height:30px;
+						line-height:30px;position:absolute;right:0;top:-5px;padding:0;width:70px;text-align:center;"><a href="" style="color:#fff;">全部品牌</a></li>
+						<div style="clear:both;"></div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="pprm_2">
+					<li><a href="./html/details.html"><img src="./images/784x300.65862a68fde8318df66154745df502c6.392x150+1-1.392x150.jpg">
+						<div class="pprm2_bag"></div>
+						<div class="pprm2_text">
+							【韩都衣舍】  满2件8折 3件7.5折
+						</div></a>
+					</li>
+					<li><a href="./html/details.html"><img src="./images/784x300.cdd83d64bf480e4584244429d65030cd.392x150+1-1.392x150.jpg">
+						<div class="pprm2_bag"></div>
+						<div class="pprm2_text">
+							【聚品男装】  满199减20
+						</div></a>
+					</li>
+					<li style="padding:0;"><a href="./html/details.html">
+
+					<img src="./images/784x300.8e7f44077f027b523b9c0394f3e2b6cf.392x150+1-1.392x150.jpg">
+						<div class="pprm2_bag"></div>
+						<div class="pprm2_text">
+							【老北京帆布鞋】  特价全部8.5折
+						</div></a>
+					</li>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="pprm_3">
+					<li><a href="./html/details.html"><img src="./images/240x120.1a21b9979a8d2b66c991803da6ba08aa.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.3baf98c3d68f055e69823bbccbe59cd0.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.4ef5ecae76d8650c949a62c097b68f56.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.8e264af23f8c3174045a61e80df0c926.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.27a40471d0e34c109b299c8b22b39aeb.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.44fc3b64d5c4f789b352982f99586ef6.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.048c49e94eb951fb47ffd4d75efb2432.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.206dcf65951dd80377c459a9e14fdbdd.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.296db6c570d18add90deb0e4b09b8c4e.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li style="border:0;"><a href="./html/details.html"><img src="./images/240x120.576dd4e69e8c5f72c5712c0e70004a39.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.973f553bce2d37c133c1989e63c52252.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.2909db90fe747a588209dfe6e1aa9d8e.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.13181cb917c2be1fe47c4bb67a8271c8.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.43413e64d00e974881feaa713d5f233d.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.76238b6616c546bcaa9a871f8b838792.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.a6a61933989836d6a08ae9a3c71f74b3.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.b815c6705eda6708d8e1e7f64e38d820.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.da914cf276974b2c383111154e0f954c.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li><a href="./html/details.html"><img src="./images/240x120.df97849c096f046f13d676e4fee4eb8b.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<li style="border:0;"><a href="./html/details.html"><img src="./images/240x120.f24879523c06e8a31578e3ad78c92c24.120x60+1-1.120x60.jpg">
+						<div class="pprm3_div"></div>
+					</a></li>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+
+<!--  限量抢购  -->
+			<div class="xlqg">
+				<div class="xlqg_1">
+					<div class="xlqg_1_left" style="font-size:18px;color:#000;">
+						限量抢购
+					</div>
+					<div class="xlqg_1_right">
+						<ul>
+							<li><a href="./html/details.html">昨20:00 开抢</a></li>
+							<li><a href="./html/details.html">00:00 开抢</a></li>
+							<li><a href="./html/details.html">09:00 开抢</a></li>
+							<li><a href="./html/details.html">12:00 开抢</a></li>
+							<li style="background:rgba(255,0,0,0.7);"><a href="" style="color:#fff;">15:00 开抢</a></li>
+							<li><a href="./html/details.html">18:00 开抢</a></li>
+							<li><a href="./html/details.html">20:00 开抢</a></li>
+							<li style="border:0;"><a href="./html/details.html">明日预告</a></li>
+							<div style="clear:both;"></div>
+						</ul>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				<div class="xlqg_2">
+					<div id="sliderContent" class="ui-corner-all">	
+      					<h2>走过路过千万不要错过了哈</h2>		
+      					<div class="viewer ui-corner-all">
+        					<div class="content-conveyor ui-helper-clearfix">
+
+          					<div class="item">
+            					<h2>胸罩</h2>
+            					<a href="./html/details.html"><img src="./images/700x700.926820996245bd9aab3baa7e55984d7a.195x195.jpg" alt="Omega Nebula"></a>
+            					<dl class="details ui-helper-clearfix">
+              					<dt>展示好身材:</dt><dd>你需要我</dd>
+              					<dt>隐形性感塑形胸罩</dt><dd>满99包邮哦</dd>
+              					<dt style="padding-top:5px;">秒杀价:</dt><dd style="color:red;font-size:16px;">¥ 89.99</dd>
+            					</dl>
+          					</div>
+
+          					<div class="item">
+            					<h2>女鞋</h2>
+            					<a href="./html/details.html"><img src="./images/700x700.e2c1798467deac44276ef3d60798b034.195x195.jpg" alt="Rosette Nebula"></a>
+            					<dl class="details ui-helper-clearfix">
+              					<dt>御寒？保暖？:</dt><dd>你需要我</dd>
+              					<dt>御寒保暖小可爱鞋</dt><dd>满59包邮哦</dd>
+              					<dt style="padding-top:5px;">秒杀价:</dt><dd style="color:red;font-size:16px;">¥ 58.99</dd>
+            					</dl>
+          					</div>
+          
+          					<div class="item">
+            					<h2>电脑整机</h2>
+            					<a href="./html/details.html"><img src="./images/800x800.3839fda65e47a98bd5f33a2a6247541b.195x195.jpg" alt="Ring Nebula"></a>
+            					<dl class="details ui-helper-clearfix">
+              					<dt>玩游戏？看大片？:</dt><dd>你需要我</dd>
+              					<dt>LOL CF 剑灵电脑套装:</dt><dd>赠送鼠标键盘哦</dd>
+              					<dt style="padding-top:5px;">秒杀价:</dt><dd style="color:red;font-size:16px;">¥ 3899.99</dd>
+          					</div>
+
+          					<div class="item">
+            					<h2>男鞋</h2>
+            					<a href="./html/details.html"><img src="./images/800x800.8e86ade5d5e87fa3e7691e640b75d331.195x195.jpg" alt="Tarantula Nebula"></a>
+            					<dl class="details ui-helper-clearfix">
+              					<dt>想装逼？想撩妹？:</dt><dd>你需要我</dd>
+              					<dt>男士撩妹必备皮鞋:</dt><dd>好评返现哦</dd>
+              					<dt style="padding-top:5px;">秒杀价:</dt><dd style="color:red;font-size:16px;">¥ 88.88</dd>
+            
+            					</dl>
+          					</div>
+
+          					<div class="item">
+            					<h2>男士英伦格</h2>
+            					<a href="./html/details.html"><img src="./images/800x800.851695287f8f4bb44e75bdb7489e0648.195x195.jpg" alt="Triangulum Nebula"></a>
+            					<dl class="details ui-helper-clearfix">
+              					<dt>想成为成功人士？:</dt><dd>你需要我</dd>
+              					<dt>法国大牌英伦格：</dt><dd>满199减20</dd>
+              					<dt style="padding-top:5px;">秒杀价:</dt><dd style="color:red;font-size:16px;">¥ 189.99</dd>
+            
+            					</dl>
+          					</div>
+
+          					<div class="item">
+            					<h2>女性套裙</h2>
+            					<a href="./html/details.html"><img src="./images/800x800.54c95b779c137aa7b2df141e23480840.195x195.jpg" alt="Eagle Nebula"></a>
+            					<dl class="details ui-helper-clearfix">
+              					<dt>展示成熟干练:</dt><dd>你需要我</dd>
+              					<dt>成熟干练职场女士必备:</dt><dd>满599送包包哦</dd>
+              					<dt style="padding-top:5px;">秒杀价:</dt><dd style="color:red;font-size:16px;">¥ 666.99</dd>
+            
+            					</dl>
+          					</div>
+
+          					<div class="item">
+            					<h2>女性套裙</h2>
+            					<a href="./html/details.html"><img src="./images/750x750.f3945c8873defeb627082ed47a767e1c.195x195.jpg" alt="Crab Nebula"></a>
+            					<dl class="details ui-helper-clearfix">
+              					<dt>人靠衣装美靠靓装？:</dt><dd>你需要我</dd>
+              					<dt>羽诗秋女士套裙:</dt><dd>赠送运费险哦</dd>
+              					<dt style="padding-top:5px;">秒杀价:</dt><dd style="color:red;font-size:16px;">¥ 269.99</dd>
+            
+            					</dl>
+          					</div>
+          
+        			</div>
+      				</div>
+      				<div id="slider"></div>
+    			</div>
+			</div>
+		</div>
+<!--  热销推荐  -->
+			<div class="rxtj">
+				<div class="rxtj_1">
+					
+					<ul>
+						<li style="font-size:18px; color:#000;padding-right:30px;">热销推荐</li>
+						
+						<li><a href="./html/details.html">即将下架</a></li>
+						<li><a href="./html/details.html">人气爆款</a></li>
+						<li><a href="" style="border:0;">每日更新</a></li>
+						<div style="clear:both;"></div>
+					</ul>
+				</div>
+				<div class="rxtj_2">
+					<ul>
+						<li><a href="./html/details.html"><img src="./images/464x260.4cb31f8d37acdad0c55a24dbb69bd26a.232x130.jpg">
+							<div class="rxtj2_div"></div>
+						</a></li>
+						<li><a href="./html/details.html"><img src="./images/464x260.0587be6536360a6ad7f09511ad8247ed.232x130.jpg">
+							<div class="rxtj2_div"></div>
+						</a></li>
+						<li><a href="./html/details.html"><img src="./images/464x260.0b85da662fad943b8218c41ce5ab7ff9.232x130.jpg">
+							<div class="rxtj2_div"></div>
+						</a></li>
+						<li><a href="./html/details.html"><img src="./images/464x260.21825683eebea437861585742c92de5e.232x130.jpg">
+							<div class="rxtj2_div"></div>
+						</a></li>
+						<li style="margin:0;"><a href="./html/details.html"><img src="./images/464x260.4b51f57baafae698c2542d828df2487d.232x130.jpg">
+							<div class="rxtj2_div"></div>
+						</a></li>
+						<div style="clear:both;"></div>
+					</ul>
+				</div>
+			</div>
+<!--  今日更新  -->
+			<div class="jrgx">
+				<div class="jrgx_1">
+					<ul>
+						<li><a href="" style="font-size:18px;color:#000;">今日已更新</a></li>
+						<li style="color:red;padding-top:3px;">●</li>
+						<li style="padding-top:3px;"><a href="" style="color:red;font-size:14px;font-weight:bold;">99999款</a></li>
+					</ul>
+				</div>
+				<div class="jrgx_2">
+					<ul>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/700x700.b1691d9d664afda2c20fdcd352ac441f.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/700x700.b1691d9d664afda2c20fdcd352ac441f.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+                            <div class="jrgx_text_left">
+                                <span><a href="./html/details.html">大黄蜂童鞋专场</a></span>
+                                <p>满2件8折</p>
+                            </div>
+                            <div class="jrgx_text_right">
+                                <span>剩余3天</span>
+                                <p><a href="./html/details.html">★收藏品牌</a></p>
+                            </div>
+                            <div style="clear:both;"></div>
+                        	</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/600x600.85fd4f20d0e72ce117854a87e58402bf.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/600x600.85fd4f20d0e72ce117854a87e58402bf.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="./html/details.html">361度运动专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余4天</span>
+								<p><a href="./html/details.html">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/600x600.6d7eb8777857ae97ff86baf8372ae8ed.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/600x600.6d7eb8777857ae97ff86baf8372ae8ed.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="./html/details.html">星夜熊男装专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余2天</span>
+								<p><a href="./html/details.html">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;margin-right: 0px;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/600x600.74efb29bc17db9800fee02eecb3e9dc9.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/600x600.74efb29bc17db9800fee02eecb3e9dc9.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="./html/details.html">魅族手机专场</a></span>
+								<p>满199元减10元</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余3天</span>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						</li>
+						<div style="clear:both;"></div>
+					</ul>
+					<ul>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/700x700.2e44b00449308632ac953b46865f7ce5.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/700x700.2e44b00449308632ac953b46865f7ce5.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+                            <div class="jrgx_text_left">
+                                <span><a href="./html/details.html">大黄蜂童鞋专场</a></span>
+                                <p>满2件8折</p>
+                            </div>
+                            <div class="jrgx_text_right">
+                                <span>剩余3天</span>
+                                <p><a href="./html/details.html">★收藏品牌</a></p>
+                            </div>
+                            <div style="clear:both;"></div>
+                        	</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="./html/details.html">361度运动专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余4天</span>
+								<p><a href="./html/details.html">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/700x700.7820c2b251ce84b84195c65a8196a19d.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/700x700.7820c2b251ce84b84195c65a8196a19d.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="./html/details.html">星夜熊男装专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余2天</span>
+								<p><a href="./html/details.html">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;margin-right: 0px;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/700x700.99caf328020b6cad351dba8b306efe16.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/700x700.99caf328020b6cad351dba8b306efe16.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="./html/details.html">魅族手机专场</a></span>
+								<p>满199元减10元</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余3天</span>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						</li>
+						<div style="clear:both;"></div>
+					</ul>
+					<ul>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/600x600.dedd5bba74f2ee32efe25ac3e4bee8dd.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/600x600.dedd5bba74f2ee32efe25ac3e4bee8dd.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+                            <div class="jrgx_text_left">
+                                <span><a href="./html/details.html">大黄蜂童鞋专场</a></span>
+                                <p>满2件8折</p>
+                            </div>
+                            <div class="jrgx_text_right">
+                                <span>剩余3天</span>
+                                <p><a href="./html/details.html">★收藏品牌</a></p>
+                            </div>
+                            <div style="clear:both;"></div>
+                        	</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/800x800.2d343e55d8a449986ef8c6bc996f02e0.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="./html/details.html">361度运动专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余4天</span>
+								<p><a href="./html/details.html">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/600x600.8928c8727df0b62e68384684d6284b98.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/600x600.8928c8727df0b62e68384684d6284b98.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="./html/details.html">星夜熊男装专场</a></span>
+								<p>满2件8折</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余2天</span>
+								<p><a href="./html/details.html">★收藏品牌</a></p>
+							</div>
+							<div style="clear:both;"></div>
+							</div>
+						</li>
+						<li class="user_jy47_tp024" style="overflow: hidden;margin-right: 0px;"><div class="floor-cot" style="height: 272px; width: 272px; margin: auto;">
+							 <a style="background:url(./images/600x600.936a9d58d32b12f910ee7bd5f0e32715.310x310.jpg) no-repeat;width:272px;height:272px;top:0px;left:0px;" href="./html/details.html"> 
+							<img alt="" style="display:block;" src="./images/600x600.936a9d58d32b12f910ee7bd5f0e32715.310x310.jpg" class=""> 
+							<span class="aaleft" style="left:0;top:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aatop" style="left:0;top:0;height:5px;background:#fcc400;display:block;"></span> 
+							<span class="aaright" style="right:0;bottom:0;width:5px;background:#fcc400;display:block;"></span> 
+							<span class="aabottom" style="right:0;bottom:0;height:5px;background:#fcc400;display:block;"></span></a>
+							</div>
+							<div class="jrgx_text">
+							<div class="jrgx_text_left">
+								<span><a href="./html/details.html">魅族手机专场</a></span>
+								<p>满199元减10元</p>
+							</div>
+							<div class="jrgx_text_right">
+								<span>剩余3天</span>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						</li>
+						<div style="clear:both;"></div>
+					</ul>
+					
+				</div>
+			</div>
+		</main>
+
+	</div>
+<!--  尾部  -->
+	<footer id="footer">
+		<div class="footer_1">
+			<ul class="foo_ul">
+				<li class="foo_li">
+					<ul class="ter_ul">
+						<li style="font-size:14px;font-weight:600;">关于我们</li>
+						<li><a href="./html/details.html">关于我们</a></li>
+						<li><a href="./html/details.html">官方视频</a></li>
+						<li><a href="./html/details.html">诚聘英才</a></li>
+						<li><a href="./html/details.html">网站服务条款</a></li>
+						<li><a href="./html/details.html">用户服务协议</a></li>
+						<li><a href="./html/details.html">联系我们</a></li>
+					</ul>
+				</li>
+				<li class="foo_li">
+					<ul class="ter_ul">
+						<li style="font-size:14px;font-weight:600;">购物指南</li>
+						<li><a href="./html/details.html">新手玩转酷我林</a></li>
+						<li><a href="./html/details.html">订单查询</a></li>
+						<li><a href="./html/details.html">会员介绍</a></li>
+						<li><a href="./html/details.html">积分攻略</a></li>
+						<li><a href="./html/details.html">帮助中心</a></li>
+					</ul>
+				</li>
+				<li class="foo_li">
+					<ul class="ter_ul">
+						<li style="font-size:14px;font-weight:600;">消费者保障</li>
+						<li><a href="./html/details.html">人工验货</a></li>
+						<li><a href="./html/details.html">退货退款政策</a></li>
+						<li><a href="./html/details.html">运费补贴卡</a></li>
+						<li><a href="./html/details.html">无忧售后</a></li>
+						<li><a href="./html/details.html">先行赔付</a></li>
+					</ul>
+				</li>
+				<li class="foo_li">
+					<ul class="ter_ul">
+						<li style="font-size:14px;font-weight:600;">商务合作</li>
+						<li><a href="./html/details.html">商家报名</a></li>
+						<li><a href="./html/details.html">友情链接</a></li>
+						<li><a href="./html/details.html">廉政举报</a></li>
+					</ul>
+				</li>
+				<li class="foo_li" style="width:250px;">
+					<ul class="ter_ul" style="width:150px;">
+						<li style="font-size:14px;font-weight:600;">下次怎么来</li>
+						<li>记住域名：<a href="./html/details.html">KUWOLIN</a></li>
+						<li>百度搜索<a href="./html/details.html"></a></li>
+						<li><a href="./html/details.html">下载桌面快捷方式</a></li>
+						<li>收藏本站：<a href="./html/details.html">加入收藏</a></li>
+						<li>订阅本站：</li>
+						<li></li>
+					</ul>
+				</li>
+				<li class="foo_li" style="border:0;width:320px;">
+					<ul class="ter_ul" style="width:240px;background:#fafafa;">
+						<li style="font-size:14px;font-weight:600;width:250px;padding-bottom:10px;">下载手机版</li>
+						<li>
+							<div class="foo_img"><img src="./images/zhe800@.png"></div>
+							<div class="foo_div">
+								<h5>扫描下载酷我林</h5>
+								<p>把折扣握在手心</p>
+								<p>把潮流带在身边</p>
+							</div>
+							<div style="clear:both;"></div>
+						</li>
+					</ul>
+				</li>
+				<div style="clear: both;"><div>
+			</ul>
+		</div>
+	</footer>
+
+	<div class="footer2_div">
+		<div class="footer_2">
+				<ul class="footer_2_one">
+					<li><a href="./html/details.html">梧州苍梧169号</a></li>	  
+					<li>梧州苍梧169号</li>  
+					<li><a href="./html/details.html">桂公网安备13647742925	</a></li>  
+					<li>营业执照1502020076</li>  
+					<li>食品流通许可证13647742925</li> 
+					<div style="clear:both;"></div>
+				</ul>
+				<ul class="footer_2_two">
+					<li>出版物经营许可证 </li>
+					<li>新出发桂零字第朝169号</li>  
+					<li>784858070@qq.com 版权所有 </li>
+					<li>KUWOJIN</li>
+					<div style="clear:both;"></div>
+				</ul>
+				<ul class="footer_2_three"><a href="./html/details.html"><img src="./images/footer.png"></a></ul>
+		</div>
+	</div>
+	<div class="a">
+		<ul class="a_top">
+			<li style="height:120px;">
+			<a href="./html/shopcar.html"><img src="./images/a1.png"><p>购</p><p>物</p><p>车</p></a>
+			</li>
+			<li><a href=""><img src="./images/a2.png"  style="width:26px;">
+				<div class="hidden_a">我的订单</div>
+			</a></li>
+			<li><a href=""><img src="./images/a3.png" style="width:26px;">
+				<div class="hidden_a">我的优惠卷</div>
+			</a></li>
+			<li><a href=""><img src="./images/a4.png" style="width:26px;">
+				<div class="hidden_a">我的收藏</div>
+			</a></li>
+			<li><a href=""><img src="./images/a5.png" style="width:26px;">
+				<div class="hidden_a">我的消息</div>
+			</a></li>
+		</ul>
+		<ul class="a_bottom">
+			<li class="imgpo"><a href=""><img src="./images/a6.png">
+				<div class="hidden_a_img"><img src="./images/zhe800@.png">
+				扫一扫
+				</div>
+			</a></li>
+			<li><a href=""><img src="./images/a7.png">
+				<div class="hidden_a">常见问题</div>
+			</a></li>
+			<li><a href=""><img src="./images/a8.png">
+				<div class="hidden_a">意见反馈</div>
+			</a></li>
+			<div class="back_top" id="back_top"><a href="javascript:void(0)" onclick="back()">TOP
+				<div class="hidden_a">返回顶部</div>
+			</a></div>
+		</ul>
+	</div>
+	<!--隐藏的搜索框-->
+<div class="hidden_big_search" id="hidden_big_search">
+		<div class="hidden1">
+			<div class="hidden1_bor">
+				<div class="hidden1_left">
+					<ul>
+						<li><a href="./html/details.html" style="color:red;">首页</a></li>
+						<li><a href="./html/details.html">大品牌</a></li>
+						<li><a href="./html/details.html">我的订单</a></li>
+						<li><a href="./html/details.html">购物车</a></li>
+						<li><a href="./html/details.html">9块9包邮</a></li>
+						<li><a href="./html/details.html">20元封顶</a></li>
+						<li><a href="./html/details.html">精选预告</a></li>
+						<li><a href="./html/details.html">特卖商城</a></li>
+						<li><a href="./html/details.html">今日上新</a></li>
+						<li><a href="./html/details.html">即将下架</a></li>
+						<li><a href="./html/details.html">每日十件</a></li>
+						<li><a href="./html/details.html">排行榜</a></li>
+						<div style="clear:both;"></div>
+					</ul>
+				</div>
+				<div class="top_search_div">
+			 		<div class="search_content_div">
+			 			<div class="search_form">
+			 				<form action="search.php" method="post"> 
+			 					<input type="text" name="" class="hidden_search_input_text" placeholder="津津有味">
+			 					<input type="submit" value="搜索" class="hidden_search_button" name="">
+			 				</form>
+			 			</div>
+			 		</div>
+		 		</div>
+		 		<div style="clear:both;"></div>
+		 	</div>
+	 	</div>
+	 	<div class="hidden2">
+	 		<ul>
+	 			<li style="color:red;"><a href="./html/details.html">全部</a></li>
+	 			<li><a href="./html/details.html">女装</a></li>
+	 			<li><a href="./html/details.html">男装</a></li>
+	 			<li><a href="./html/details.html">鞋品</a></li>
+	 			<li><a href="./html/details.html">居家</a></li>
+	 			<li><a href="./html/details.html">美妆</a></li>
+	 			<li><a href="./html/details.html">数码家电</a></li>
+	 			<li><a href="./html/details.html">儿童</a></li>
+	 			<li><a href="./html/details.html">母婴</a></li>
+	 			<li><a href="./html/details.html">箱包</a></li>
+	 			<li><a href="./html/details.html">美食</a></li>
+	 			<li><a href="./html/details.html">内衣</a></li>
+	 			<li><a href="./html/details.html">家纺</a></li>
+	 			<li><a href="./html/details.html">配饰</a></li>
+	 			<li><a href="./html/details.html">文体</a></li>
+	 			<li><a href="./html/details.html">中老年</a></li>
+	 			<div style="clear:both;"></div>
+	 		</ul>
+	 	</div>
+</div>
+</body>
+</html>

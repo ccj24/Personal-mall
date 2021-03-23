@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>登录注册页</title>
+
+<link rel="stylesheet" href="../css/log.css">
+
+</head>
+<body>
+<span><a href="../index.html">返回首页</a></span>
+<div class="cotn_principal">
+  <div class="cont_centrar">
+    <div class="cont_login">
+      <div class="cont_info_log_sign_up">
+        <div class="col_md_login">
+          <div class="cont_ba_opcitiy">
+            <h2>登录</h2>
+            <p>快来登录吧</p>
+            <button class="btn_login" onClick="cambiar_login()">点击登录</button>
+          </div>
+        </div>
+        <div class="col_md_sign_up">
+          <div class="cont_ba_opcitiy">
+            <h2>注册</h2>
+            <p>快来注册吧！</p>
+            <button class="btn_sign_up" onClick="cambiar_sign_up()">点击注册</button>
+          </div>
+        </div>
+      </div>
+      <div class="cont_back_info">
+        <div class="cont_img_back_grey"> <img src="../images/po.jpg" alt="" /> </div>
+      </div>
+      <div class="cont_forms" >
+        <div class="cont_img_back_"> <img src="../images/po.jpg" alt="" /> </div>
+        <div class="cont_form_login"> <a href="#" onClick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+          <form action="#" method="get" autocomplete="off">
+          <h2>登录</h2>
+          <input type="text" placeholder="邮箱" />
+          <input type="password" placeholder="密码" />
+          <button class="btn_login" onClick="cambiar_login()">提交</button>
+          </form>
+        </div>
+        <div class="cont_form_sign_up"> <a href="#" onClick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+          <form action="#" method="get" autocomplete="off">
+          <h2>注册</h2>
+          <input type="text" placeholder="邮箱" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="请按要求填写"/>
+          <input type="text" placeholder="用户名" pattern="^[a-zA-Z0-9_-]{4,16}$" required="请按要求填写"/><!-- 4到16位（字母，数字，下划线，减号） -->
+          <input type="password" placeholder="密码" pattern="^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$" required="请按要求填写"/><!-- 最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符 -->
+          <input type="password" placeholder="手机号码" pattern="^1[34568][0-9]{9}$" required="请按要求填写"/>
+          <!-- <input type="submit" value="提交"> -->
+          <button class="btn_sign_up" onClick="cambiar_sign_up()">提交</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/index.js"></script>
+
+</body>
+</html>
+
